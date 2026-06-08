@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HAPPY SHOP</title>
+<title>Happy Shop</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -16,50 +17,64 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#4b0082,#6a0dad,#8e44ad);
+background:
+linear-gradient(135deg,#000000,#111827,#1f2937);
 min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 padding:20px;
+overflow:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:rgba(255,215,0,.08);
+border-radius:50%;
+filter:blur(120px);
+top:-150px;
+right:-100px;
 }
 
 .card{
 width:100%;
 max-width:420px;
-background:rgba(255,255,255,0.12);
-backdrop-filter:blur(15px);
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,215,0,.25);
 border-radius:30px;
 padding:30px;
 text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,0.25);
-border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 0 40px rgba(255,215,0,.15);
+position:relative;
+z-index:2;
 }
 
-.logo{
-width:90px;
-height:90px;
-margin:auto;
+.logo img{
+width:150px;
+height:150px;
 border-radius:50%;
-background:linear-gradient(135deg,#FFD700,#FFA500);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:32px;
-font-weight:700;
-color:#fff;
+object-fit:cover;
+background:#fff;
+padding:6px;
+box-shadow:0 0 30px rgba(255,215,0,.8);
 }
 
 h1{
-color:#fff;
+color:#FFD700;
+font-size:34px;
 margin-top:15px;
-font-size:32px;
+font-weight:700;
 }
 
 .tagline{
-color:#e8e8e8;
+color:#ddd;
 font-size:14px;
-margin-top:5px;
+letter-spacing:2px;
+margin-top:8px;
 margin-bottom:25px;
 }
 
@@ -67,14 +82,14 @@ margin-bottom:25px;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:10px;
 text-decoration:none;
-padding:16px;
-margin:12px 0;
-border-radius:16px;
-font-size:17px;
+padding:17px;
+margin:14px 0;
+border-radius:18px;
+font-size:18px;
 font-weight:600;
-transition:0.3s;
+color:#fff;
+transition:.3s;
 }
 
 .btn:hover{
@@ -82,36 +97,30 @@ transform:translateY(-3px);
 }
 
 .phonepe{
-background:#ffffff;
-color:#5f259f;
+background:#5f259f;
 }
 
 .whatsapp{
 background:#25D366;
-color:#fff;
 }
 
 .call{
-background:#2196F3;
-color:#fff;
+background:#f59e0b;
+color:#000;
 }
 
 .footer{
 margin-top:20px;
-color:#fff;
-font-size:15px;
+font-size:13px;
+color:#ccc;
 }
 
-.number{
-font-weight:700;
-font-size:18px;
+.goldline{
+height:2px;
+background:linear-gradient(to right,transparent,#FFD700,transparent);
+margin:18px 0;
 }
 
-.note{
-margin-top:10px;
-font-size:12px;
-opacity:0.8;
-}
 </style>
 </head>
 
@@ -119,32 +128,37 @@ opacity:0.8;
 
 <div class="card">
 
-<div class="logo">HS</div>
-
-<h1>HAPPY SHOP</h1>
-
-<div class="tagline">
-Gift & General Store
+<div class="logo">
+<img src="logo.png" alt="Happy Shop Logo">
 </div>
 
+<h1>Happy Shop</h1>
+
+<div class="tagline">
+GIFT & GENERAL STORE
+</div>
+
+<div class="goldline"></div>
+
 <a class="btn phonepe"
-href="upi://pay?pa=8080605200@axl&pn=Happy Shop">
-💳 Pay with PhonePe
+href="upi://pay?pa=8080605200@axl">
+💜 PhonePe Payment
 </a>
 
 <a class="btn whatsapp"
-href="https://wa.me/918080605200">
+href="https://wa.me/918888919139">
 💬 WhatsApp Chat
 </a>
 
 <a class="btn call"
-href="tel:+918080605200">
+href="tel:+918888919139">
 📞 Call Now
 </a>
 
+<div class="goldline"></div>
+
 <div class="footer">
-<div class="number">8080605200</div>
-<div class="note">Thank You For Visiting ❤️</div>
+✨ Thank You For Visiting Happy Shop ✨
 </div>
 
 </div>
