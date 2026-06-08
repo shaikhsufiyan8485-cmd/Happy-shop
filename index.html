@@ -1,58 +1,191 @@
-<a class="btn phonepe" href="upi://pay?pa=8080605200@axl&pn=Happy%20Shop&cu=INR">
-💜 PhonePe Payment
-</a>
-
-<a class="btn whatsapp" href="https://wa.me/918888919139">
-💬 WhatsApp Chat
-</a>
-
-<a class="btn call" href="tel:+918888919139">
-📞 Call Now
-</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Shop</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.card{
+width:100%;
+max-width:420px;
+background:#111827;
+border-radius:25px;
+padding:25px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,215,0,.25);
+border:2px solid rgba(255,215,0,.2);
+}
+
+.logo img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 0 25px rgba(255,215,0,.5);
+}
+
+h1{
+color:#fff;
+margin-top:15px;
+font-size:34px;
+}
+
+.tagline{
+color:#facc15;
+font-size:15px;
+margin-top:5px;
+letter-spacing:2px;
+}
+
+.badge{
+margin-top:15px;
+background:#facc15;
+color:#000;
+padding:8px 15px;
+border-radius:50px;
+font-weight:bold;
+display:inline-block;
+}
+
+.info-box{
+margin-top:15px;
+background:rgba(255,255,255,.08);
+padding:12px;
+border-radius:12px;
+color:#fff;
+}
+
+.goldline{
+height:2px;
+background:linear-gradient(to right,transparent,gold,transparent);
+margin:20px 0;
+}
+
 .btn{
 display:block;
-width:100%;
+text-decoration:none;
 padding:16px;
 margin:12px 0;
-border-radius:18px;
-text-decoration:none;
+border-radius:16px;
 font-size:18px;
 font-weight:bold;
-text-align:center;
 transition:.3s;
 color:#fff;
 }
 
 .phonepe{
 background:linear-gradient(135deg,#5f259f,#8b5cf6);
-box-shadow:0 8px 20px rgba(95,37,159,.4);
 }
 
 .phonepe:hover{
 transform:translateY(-3px);
-box-shadow:0 0 30px #8b5cf6;
+box-shadow:0 0 25px #8b5cf6;
 }
 
 .whatsapp{
 background:linear-gradient(135deg,#25D366,#128C7E);
-box-shadow:0 8px 20px rgba(37,211,102,.4);
 }
 
 .whatsapp:hover{
 transform:translateY(-3px);
-box-shadow:0 0 30px #25D366;
+box-shadow:0 0 25px #25D366;
 }
 
 .call{
-background:linear-gradient(135deg,#f59e0b,#ffcc00);
+background:linear-gradient(135deg,#f59e0b,#ffd700);
 color:#000;
-box-shadow:0 8px 20px rgba(245,158,11,.4);
 }
 
 .call:hover{
 transform:translateY(-3px);
-box-shadow:0 0 30px #f59e0b;
+box-shadow:0 0 25px #f59e0b;
+}
+
+.store-info{
+margin-top:20px;
+background:rgba(255,255,255,.06);
+padding:15px;
+border-radius:15px;
+color:#fff;
+line-height:1.8;
+}
+
+.footer{
+margin-top:20px;
+color:#d1d5db;
+font-size:14px;
 }
 </style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">
+<img src="YOUR_LOGO_IMAGE_LINK_HERE" alt="Happy Shop">
+</div>
+
+<h1>Happy Shop</h1>
+
+<div class="tagline">
+GIFT & GENERAL STORE
+</div>
+
+<div class="badge">
+⭐ Trusted Store
+</div>
+
+<div class="info-box">
+🎁 Gifts • Toys • Keychains • General Items
+</div>
+
+<div class="goldline"></div>
+
+<a class="btn phonepe"
+href="upi://pay?pa=8080605200@axl&pn=Happy%20Shop&cu=INR">
+💜 PhonePe Payment
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/918888919139">
+💬 WhatsApp Chat
+</a>
+
+<a class="btn call"
+href="tel:+918888919139">
+📞 Call Now
+</a>
+
+<div class="goldline"></div>
+
+<div class="store-info">
+📍 Happy Shop<br>
+🕒 Open Daily : 7 AM - 11 PM
+</div>
+
+<div class="footer">
+✨ Thank You For Visiting Happy Shop ✨
+</div>
+
+</div>
+
+</body>
+</html>
