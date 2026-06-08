@@ -1,114 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Shop</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#ff6b6b,#feca57,#48dbfb,#5f27cd);
-background-size:400% 400%;
-text-align:center;
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-.container{
+body{
+background:
+linear-gradient(135deg,#000000,#111827,#1f2937);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 padding:20px;
+overflow:hidden;
 }
 
-.logo{
-font-size:40px;
-font-weight:bold;
-margin-top:20px;
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:rgba(255,215,0,.08);
+border-radius:50%;
+filter:blur(120px);
+top:-150px;
+right:-100px;
 }
 
 .card{
-background:white;
-color:black;
-max-width:400px;
-margin:auto;
-padding:20px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
-}
-
-.btn{
-display:block;
-padding:15px;
-margin:10px 0;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-}
-
-.pay{background:#ff6b00;}
-.whatsapp{background:#25D366;}
-.call{background:#0066ff;}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<div class="logo">🎁 HAPPY SHOP</div>
-<p>Gift & General Store</p>
-
-<div class="card">
-<div class="action-buttons">
-
-<a href="upi://pay?pa=8080605200@axl&pn=Happy Shop" class="btn phonepe">
-💜 PhonePe Payment
-</a>
-
-<a href="https://wa.me/918080605200" class="btn whatsapp">
-💚 WhatsApp Chat
-</a>
-
-<a href="tel:+918080605200" class="btn call">
-📞 Call Now
-</a>
-
-</div>
-
-<style>
-.action-buttons{
 width:100%;
-max-width:350px;
-margin:auto;
+max-width:420px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,215,0,.25);
+border-radius:30px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,215,0,.15);
+position:relative;
+z-index:2;
+}
+
+.logo img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+background:#fff;
+padding:6px;
+box-shadow:0 0 30px rgba(255,215,0,.8);
+}
+
+h1{
+color:#FFD700;
+font-size:34px;
+margin-top:15px;
+font-weight:700;
+}
+
+.tagline{
+color:#ddd;
+font-size:14px;
+letter-spacing:2px;
+margin-top:8px;
+margin-bottom:25px;
 }
 
 .btn{
-display:block;
+display:flex;
+align-items:center;
+justify-content:center;
 text-decoration:none;
-padding:18px;
-margin:15px 0;
-border-radius:15px;
-font-size:20px;
-font-weight:700;
-text-align:center;
-color:white;
-transition:0.3s;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
-}
-
-.phonepe{
-background:linear-gradient(135deg,#5f259f,#8a2be2);
-}
-
-.whatsapp{
-background:linear-gradient(135deg,#25D366,#128C7E);
-}
-
-.call{
-background:linear-gradient(135deg,#0099ff,#005eff);
+padding:17px;
+margin:14px 0;
+border-radius:18px;
+font-size:18px;
+font-weight:600;
+color:#fff;
+transition:.3s;
 }
 
 .btn:hover{
 transform:translateY(-3px);
 }
+
+.phonepe{
+background:#5f259f;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.call{
+background:#f59e0b;
+color:#000;
+}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#ccc;
+}
+
+.goldline{
+height:2px;
+background:linear-gradient(to right,transparent,#FFD700,transparent);
+margin:18px 0;
+}
+
 </style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">
+  <img src="file_000000001ad871fa9ff3c7f87fbb34aa.png" alt="Happy Shop Logo">
+</div>
+
+<h1>Happy Shop</h1>
+
+<div class="tagline">
+GIFT & GENERAL STORE
+</div>
+
+<div class="goldline"></div>
+
+<a class="btn phonepe"
+href="upi://pay?pa=8080605200@axl">
+💜 PhonePe Payment
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/918888919139">
+💬 WhatsApp Chat
+</a>
+
+<a class="btn call"
+href="tel:+918888919139">
+📞 Call Now
+</a>
+
+<div class="goldline"></div>
+
+<div class="footer">
+✨ Thank You For Visiting Happy Shop ✨
+</div>
+
+</div>
+
+</body>
+</html>
